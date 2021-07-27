@@ -124,11 +124,14 @@ body {
   background-color: var(--secondary-bg-color);
   text-align: center;
 }
+.hero-box {
+  margin-right: auto;
+  margin-left: auto;
+  width: 696px;
+}
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
-  margin-right: 0;
-
   color: var(--white-text);
   font-weight: 900;
   font-size: 44px;
@@ -220,8 +223,7 @@ body {
 .image-block {
   display: block;
 }
-.work-section,
-.team-section {
+.work-section {
   padding-top: 0;
 }
 /* Секция "Наша команда"*/
@@ -236,8 +238,12 @@ body {
 .team .item:nth-child(4n) {
   margin-right: 0;
 }
+.name-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team .title {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 500;
@@ -247,19 +253,17 @@ body {
 }
 .team .position {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
 /* Подвал сайта */
 .footer {
-  background-color: var(--secondary-bg-color);
-}
-.footer-container {
-  display: block;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--secondary-bg-color);
 }
 .logo-footer {
   display: block;
@@ -297,10 +301,12 @@ body {
   justify-content: center;
   margin-bottom: 56px;
 }
+
 .button-filter .filter:not(:last-child) {
   margin-right: 8px;
 }
 .button-filter .item {
+  padding: 6px 22px;
   background-color: var(--filter-bg-color);
   color: var(--title-text-color);
   font-family: inherit;
